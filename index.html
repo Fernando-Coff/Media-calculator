@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://kit.fontawesome.com/cc5f700981.js" crossorigin="anonymous"></script>
+    <title>Calculadora de Média</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="left-container">
+            <img src="assets/images/undraw_education_f8ru.svg" alt="Studing">
+        </div><!--Left-containet Finish-->
+
+        <div class="right-container">
+
+            <form class="form" id="form">
+
+                <header class="form-header">
+                    <div class="title">
+                        <h1>Calculadora de médias</h1>
+                    </div>
+                </header>
+
+                <div class="form-group">
+
+                    <div class="form-item">
+                        <label for="matter">Matéria</label>
+                        <input type="text" placeholder="Matéria" id="matter">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Mensagem de erro</small>
+                    </div><!--Finish form-item-->
+
+                    <div class="form-item">
+                        <label for="note">Nota</label>
+                        <input type="number" placeholder="Nota" id="note" step="0.1">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Mensagem de erro</small>
+                    </div><!--Finish form-item-->
+
+                </div><!--Finish form group-->
+
+                <button type="submit">Adicionar</button>
+            </form><!--Finish form-->
+
+            <div class="table-form">
+
+                <table class="table-group" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Matéria</th>
+                            <th>Nota</th>
+                            <th>Situação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table><!--Table Finish-->
+
+            </div>
+
+            <div id="result" class="result">
+                <div class="number">
+                    <span id="final-number">0.0</span>
+                    <p>Média final</p>
+                </div>
+                <div class="situation-text">
+                    <span id="result-text">Aprovado</span>
+                </div>
+            </div><!--Result finish-->
+
+        </div><!--Container finish-->
+
+    <script src="assets/script/script.js"></script>    
+</body>
+</html>

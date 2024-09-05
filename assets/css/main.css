@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "inter", sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    box-shadow: 5px 5px 10px rgba(0,0,0,.2);
+}
+
+.left-container{
+    width: 50%;
+    height: 100%;
+    background-image: linear-gradient(25deg, rgba(138,255,172,1) 0%, rgba(119,145,250,1) 100%);;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-container img{
+    width: 35rem;
+}
+
+.right-container{
+    width: 50%;
+    height: 100%;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title h1{
+    font-weight: 600;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 0.25rem;
+}
+
+.form-group{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-item{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 1rem 1rem 1rem 1rem ;
+}
+
+.form-item label{
+    font-weight: 400;
+    font-size: 0.8rem;
+    margin-bottom: 0.25rem;
+    margin-left: 0.25rem;
+}
+
+.form-item input{
+    display: block;
+    width: 100%;
+    height: 2.5rem;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: solid 2px #eee;
+    font-weight: 500px;
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    appearance: textfield; 
+}
+
+.form-item input::-webkit-outer-spin-button,
+.form-item input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.form-item i{
+    position: absolute;
+    top: 30px;
+    right: 1rem;
+    visibility: hidden;
+}
+
+.form-item small{
+    margin-top: 0.25rem;
+    margin-left: 0.25rem;
+    color: rgb(210, 0, 0);
+    visibility: hidden;
+}
+
+.form button{
+    display: block;
+    width: 95%;
+    height: 2.5rem;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: transparent;
+    color: #fafafa;
+    font-size: 1rem;
+    font-weight: 500;
+    font-weight: 500px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.6s;
+    background-position: left;
+    background-image: linear-gradient(50deg, rgba(138,255,172,1) 0%, rgba(119,145,250,1) 100%);
+    background-size: 150%;
+}
+
+.form button:hover{
+    background-position: right;
+}
+
+.table-form{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+th{
+    padding: 0.25rem 3.25rem;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+table, td{
+    border-top: solid 1px #eee;
+    padding: 0.25rem;
+    text-align: center;
+}
+
+.result{
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    align-items: center;
+    padding: 0rem 5rem;
+    margin-top: 1.5rem;
+    visibility: hidden;
+}
+
+.number{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.number span{
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+.number p{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+#result-text{
+    font-size: 1.25rem;
+}
+
+.form-item.error input{
+    border: 2px solid rgb(238, 95, 95);
+}
+.form-item.error small{
+    visibility: visible;
+}
+
+.form-item.error > i.fa-exclamation-circle{
+    visibility: visible;
+    color: rgb(238, 95, 95);
+}
+
+.form-item.success input{
+    border: 2px solid rgb(33, 197, 33);
+}
+
+.form-item.form-item.success > i.fa-check-circle{
+    visibility: visible;
+    color: rgb(33, 197, 33);
+}
